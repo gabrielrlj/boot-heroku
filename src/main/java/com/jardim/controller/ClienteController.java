@@ -18,6 +18,14 @@ public class ClienteController {
 	@Autowired
 	private ClienteService clienteService;
 	
+	
+	@GetMapping("/")
+	@ResponseBody
+	public String inicial(){
+		return "index";
+	}
+	
+	
 	@GetMapping
 	@ResponseBody
 	public List<Cliente> listaTodos(){
