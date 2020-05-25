@@ -20,7 +20,6 @@ public class ClienteController {
 	
 	
 	@GetMapping("/")
-	@ResponseBody
 	public String inicial(){
 		return "index";
 	}
